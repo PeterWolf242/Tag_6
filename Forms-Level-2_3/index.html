@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Forms-Level-2_3</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>&nbsp;Register form&nbsp;</legend>
+      <section>
+        <label for="name" class="label_main">Name</label>
+        <input
+          type="text"
+          name="name"
+          class="inputBox"
+          id="name"
+          placeholder="Name"
+        />
+      </section>
+      <section>
+        <label for="surname" class="label_main">Surname</label>
+        <input type="text" name="surname" id="surname" placeholder="Surname" />
+      </section>
+      <section>
+        <label for="email" class="label_main">Surname</label>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </section>
+      <section>
+        <label for="Gender" class="label_main">Gender</label>
+
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="gender" />
+
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="gender" />
+      </section>
+      <section>
+        <label class="label_main" for="file">Picture</label>
+        <input type="file" id="file" />
+      </section>
+      <section>
+        <label class="label_main" for="country" name="country">Country</label>
+        <select name="country" id="country">
+          <option value="germany">Germany</option>
+          <option value="France">France</option>
+          <option value="USA">USA</option>
+        </select>
+      </section>
+      <section class="languages">
+        <label class="label_main" for="languages">Preferred languages</label>
+        <select
+          class="language"
+          name="languages"
+          id="languages"
+          multiple="multiple"
+        >
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">Javascript</option>
+          <option value="">React</option>
+        </select>
+      </section>
+      <section>
+        <label class="label_main" for="activity">Fieled of activity</label>
+        <input type="checkbox" name="activity[]" id="it" value="IT" />
+        <label for="it">IT</label>
+        <input type="checkbox" name="activity[]" id="design" value="Design" />
+        <label for="design">Design</label>
+        <input type="checkbox" name="activity[]" id="other" value="Other" />
+        <label for="other">Other</label>
+      </section>
+      <section class="output">
+        <input type="submit" value="Send" />
+        <input type="submit" value="Chancel" />
+      </section>
+    </fieldset>
+  </body>
+</html>

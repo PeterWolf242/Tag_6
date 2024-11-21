@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 30vw;
+  margin: 4rem auto 0 auto;
+}
+
+form input {
+  outline: none;
+}
+
+form span {
+  color: red;
+}
+
+form section {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+form section:nth-of-type(2) {
+  flex-direction: column;
+}
+
+form section:nth-of-type(2) input,
+form section:nth-of-type(3),
+form section select,
+form textarea,
+button {
+  display: block;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form section input {
+  width: min(50%, 100%);
+  padding: 10px;
+}
+
+form section select,
+form section textarea {
+  padding: 10px;
+}
+
+form input:focus::placeholder {
+  visibility: hidden;
+}
+
+form input:focus {
+  background-color: rgba(185, 185, 185, 0.123);
+  border: 1px solid rgba(173, 173, 173, 0.644);
+}
+
+textarea {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: rgb(103, 175, 175);
+  color: whitesmoke;
+  border: none;
+  padding: 0.5rem 1rem;
+}

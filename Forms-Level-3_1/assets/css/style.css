@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --color_black: #000000;
+  --color_white: #ffffff;
+  --color_green_soft: rgb(189, 209, 197);
+  --color_green_dark: #9eaba2;
+  --color_brown_soft: rgb(211, 162, 157);
+  --color_brown_dark: #a36361;
+  --color_yellow: #eecc8c;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../img/waterfall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+form {
+  width: 30vw;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: rgb(189, 209, 197, 0.6);
+  box-shadow: 0 0 14px var(--color_white);
+  backdrop-filter: blur(15px);
+  margin: auto;
+  overflow: hidden;
+}
+
+form h1,
+form h2 {
+  background-color: rgb(211, 162, 157, 0.8);
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+form h1 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--color_brown_dark);
+  padding-top: 2rem;
+}
+
+form h2 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  color: var(--color_white);
+  border-bottom: 0.4rem solid var(--color_brown_dark);
+  padding-bottom: 2rem;
+}
+
+form section {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 0 1rem 0 1rem;
+}
+
+form section .box_content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color_green_dark);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+form section label {
+  color: var(--color_white);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+form section input {
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(131, 131, 131, 0.644);
+}
+
+form section button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color_brown_soft);
+  color: var(--color_white);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+form section button:hover {
+  background-color: var(--color_yellow);
+  color: var(--color_black);
+}
+
+form input[type='checkbox'] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+form .min_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+form .min_box .accept {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+form .min_box .accept label {
+  font-size: 12px;
+  color: --;
+}

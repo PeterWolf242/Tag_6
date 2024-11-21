@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --color_green_light: #3cb47b;
+  --color_green_dark: #1d794e;
+  --color_white: #ffffff;
+}
+
+form {
+  width: 25rem;
+  margin: 10rem auto;
+  background-color: black;
+  padding: 2rem;
+}
+
+form .button_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+form .button_box a {
+  text-decoration: none;
+  color: var(--color_white);
+}
+
+form .button_box button {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--color_white);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+form .button_box .btn_aktiv {
+  background-color: var(--color_green_light);
+}
+
+form button:hover,
+form button[type='submit']:hover {
+  background-color: var(--color_green_dark);
+}
+
+form h2 {
+  color: var(--color_white);
+  margin: 2rem auto 4rem auto;
+  text-align: center;
+}
+
+form .input_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+form .input_box input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+form .input_box .input_name_box {
+  display: flex;
+  gap: 10px;
+}
+
+form p a {
+  color: var(--color_green_light);
+  float: right;
+  margin-bottom: 2rem;
+  transition: 0.5s all ease-in-out;
+}
+
+form p a:hover {
+  color: var(--color_green_dark);
+}
+
+form button[type='submit'] {
+  display: block;
+  width: 100%;
+  background-color: var(--color_green_light);
+  color: var(--color_white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+form input:focus::placeholder,
+form input:active::placeholder {
+  visibility: hidden;
+}

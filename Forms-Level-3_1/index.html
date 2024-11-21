@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Forms-Level-3_1</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Sign in Please</h1>
+      <h2>F&uuml;llen Sie alle Daten aus die uns mitteilen moechten!</h2>
+      <h3></h3>
+      <section>
+        <div class="box_content">
+          <label for="name">Vorname und Nachname</label>
+          <input type="text" name="name" id="name" required />
+          <label for="adress">Adresse</label>
+          <input type="text" name="adress" id="adress" />
+        </div>
+        <div class="box_content">
+          <label for="email">E-Mail Adresse</label>
+          <input type="email" name="email" id="email" />
+          <label for="phone">Telefon</label>
+          <input type="phone" name="phone" id="phone" />
+        </div>
+        <div class="box_content">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+
+          <label for="password_confirm">Password bestätigen</label>
+          <input
+            type="password_confirm"
+            name="password_confirm"
+            id="password_confirm"
+          />
+        </div>
+        <div class="min_box">
+          <button type="submit">Senden</button>
+          <div class="accept">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Akzeptieren Sie unsere Datenschutzbestimmungen</label
+            >
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

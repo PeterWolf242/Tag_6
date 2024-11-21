@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Forms-Level-1_1</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="InputName">Name <span>*</span></label>
+      <section>
+        <input
+          type="text"
+          name="textInput"
+          id="InputName"
+          placeholder="Vorname"
+          required
+        />
+        <input type="text" name="textInput" placeholder="Nachname" required />
+      </section>
+      <section>
+        <label for="email">Email <span>*</span></label>
+        <input type="email" name="Email" id="email" />
+
+        <label for="change">Thema</label>
+        <select name="change" id="change">
+          <option value="General">General</option>
+          <option value="Advertise">Advertise</option>
+          <option value="Partnership">Partnership</option>
+        </select>
+      </section>
+      <section>
+        <label for="message">Nachricht <span>*</span></label>
+        <textarea name="message" id="message" rows="10" required></textarea>
+      </section>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

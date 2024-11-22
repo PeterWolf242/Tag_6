@@ -13,9 +13,9 @@
 :root {
   --color_black: #000000;
   --color_white: #ffffff;
-  --color_green_soft: rgb(189, 209, 197);
+  --color_green_soft: #bdd1c5;
   --color_green_dark: #9eaba2;
-  --color_brown_soft: rgb(211, 162, 157);
+  --color_brown_soft: #d3a29d;
   --color_brown_dark: #a36361;
   --color_yellow: #eecc8c;
 }
@@ -32,11 +32,8 @@ body {
 
 form {
   width: 30vw;
-  height: fit-content;
   border-radius: 1rem;
-  background-color: rgb(189, 209, 197, 0.6);
-  box-shadow: 0 0 14px var(--color_white);
-  backdrop-filter: blur(15px);
+  background-color: var(--color_white);
   margin: auto;
   overflow: hidden;
 }
@@ -65,30 +62,50 @@ form h2 {
 form section {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
-  padding: 0 1rem 0 1rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-bottom: 2px solid var(--color_brown_dark);
+}
+
+form section:nth-of-type(3),
+form section:nth-of-type(4) {
+  border: none;
 }
 
 form section .box_content {
   display: flex;
   flex-direction: column;
-  background-color: var(--color_green_dark);
   margin: 0.5rem 0;
   padding: 1rem;
-  border-radius: 0.4rem;
 }
 
 form section label {
-  color: var(--color_white);
+  color: var(--color_brown_dark);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  transition: 0.2s all ease-in-out;
 }
 
 form section input {
-  margin-bottom: 0.5rem;
-  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  padding: 1rem 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid rgba(131, 131, 131, 0.644);
+  border: 1px solid #ecf0f3;
+  border: none;
+  background: #ecf0f3;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px white;
+}
+
+form section .box_content input:focus {
+  outline: none;
+  border: 1px solid var(--color_brown_dark);
+  box-shadow: inset 10px 10px 10px #bdd1c5, inset -10px -10px -10px #d2e0d8;
+}
+
+form section .box_content label:has(+ input:focus) {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a36361;
 }
 
 form section button {
@@ -108,27 +125,27 @@ form section button:hover {
 }
 
 form input[type='checkbox'] {
-  display: inline-block;
+  display: inline;
   width: 20px;
   height: 20px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 10px;
+  box-shadow: none;
 }
 
 form .min_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-left: 1rem;
+  column-gap: 1rem;
 }
 
 form .min_box .accept {
-  display: flex;
-  align-items: center;
+  display: inline;
   width: 100%;
 }
 
 form .min_box .accept label {
   font-size: 12px;
-  color: --;
 }

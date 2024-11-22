@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Access Main</title>
+  </head>
+  <body>
+    <main>
+      <a href="access_main.html">
+        <img class="btn_left" src="./assets/img/left.png" alt="" />
+      </a>
+      <img
+        class="login_view"
+        id="login_view_small"
+        src="./assets/img/login_view.png"
+        alt="login_view"
+        title="login_view"
+        aria-label="login_view"
+      />
+
+      <div class="access_main access_main_big">
+        <div class="access_main_top">
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <div class="sign_in_box">
+        <h1>Sign Up</h1>
+
+        <form action="">
+          <div>
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Peter Parker"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="peterparker@explanation.com"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" />
+          </div>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree" class="agree_text"
+            >I agree to the Terms&nbsp;&&nbsp; Conditions and Privacy
+            Policy</label
+          >
+          <div class="or_label">
+            <button type="submit">Create Account</button>
+            <div class="highlight_label">
+              <span></span>
+              <p>&nbsp;OR&nbsp;</p>
+              <span></span>
+            </div>
+            <button type="submit">Sign up with Google</button>
+          </div>
+          <p class="account_exists">
+            You already hav an account? <a href="sign_in.html">Sign in</a>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
